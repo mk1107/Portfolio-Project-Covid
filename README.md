@@ -14,3 +14,6 @@ I have also use python to run sql queries in Jupyter Notebook!! :p
 ## Guide 
 - Alex The Analyst youtube channel
 - Google 
+
+## Dataset Used
+- https://ourworldindata.org/covid-deaths
