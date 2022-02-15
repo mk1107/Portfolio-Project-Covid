@@ -1,5 +1,7 @@
 -- Created by Mohanish Kashiwar
 -- Protfolio Project on Covid data
+
+
 -- To check if data is imported correctly in database
 
 SELECT *
@@ -20,7 +22,7 @@ ORDER BY location, date
 
 
 -- Total cases vs total deaths
--- Likelihood of dying due to covin in India
+-- Likelihood of dying due to covid in India
 
 SELECT location, CONVERT(DATE, date) AS date, total_cases, total_deaths, (CONVERT(decimal, total_deaths)/CONVERT(decimal, total_cases))*100 AS DeathPercentage 
 FROM PortfolioProject..CovidDeaths 
@@ -120,6 +122,7 @@ WHERE dea.continent is not null
 
 SELECT *, (RollingPeopleVaccinated/Population)*100 AS RollingPeopleVaccinatedPercent
 FROM PopvsVac
+ORDER BY Location,Date
 
 
 -- Using Temp Table to perform Calculation on Partition By in previous query
@@ -145,3 +148,4 @@ JOIN PortfolioProject..CovidVaccinations vac
 
 SELECT *, (RollingPeopleVaccinated/Population)*100
 FROM #PercentPopulationVaccinated
+
