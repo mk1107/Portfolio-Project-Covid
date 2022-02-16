@@ -17,3 +17,13 @@ I have also use python to run sql queries in Jupyter Notebook!! :p
 
 ## Dataset Used
 - https://ourworldindata.org/covid-deaths
+
+## Live Demo
+- [view Project Details on Tableau Public](https://public.tableau.com/app/profile/mohanish.kashiwar/viz/PortfolioProjectCovid_16450331402700/Dashboard1?publish=yes)
+
+
+## Summery
+- Global stats in terms of Total Cases, Total Deaths, and Total Vaccincation
+- Continent wise Total Death and Total Vaccination counts
+- Country wise Percent Population Infected and Percent Population Vaccinated 
+- Continent wise Percent Population Infected and Percent Population Vaccinated 
