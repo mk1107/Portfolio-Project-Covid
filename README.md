@@ -21,6 +21,7 @@ I have also use python to run sql queries in Jupyter Notebook!! :p
 ## Live Demo
 - [view Project Details on Tableau Public](https://public.tableau.com/app/profile/mohanish.kashiwar/viz/PortfolioProjectCovid_16450331402700/Dashboard1?publish=yes)
 
+![Final Visualization](https://github.com/mk1107/Portfolio-Project-Covid/blob/main/Final%20Visualization.png)
 
 ## Summery
 - Global stats in terms of Total Cases, Total Deaths, and Total Vaccincation
