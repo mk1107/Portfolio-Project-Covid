@@ -1,6 +1,6 @@
 -- Created by Mohanish Kashiwar
 -- Protfolio Project on Covid data
-
+-- Basic play with data
 
 -- To check if data is imported correctly in database
 
@@ -91,6 +91,20 @@ FROM PortfolioProject..CovidDeaths
 WHERE continent IS NOT null 
 GROUP BY date 
 ORDER BY 1,2
+
+
+-- Country wise vaccination Status
+
+SELECT location, total_vaccinations, people_vaccinated AS PeopleWithFirstDose, people_fully_vaccinated AS PeopleWithSecondDose, total_boosters AS PeopleWithBoosterShot
+FROM PortfolioProject..CovidVaccinations AS vac
+WHERE continent IS NOT NULL 
+	AND total_vaccinations IN (
+		SELECT MAX(CAST(total_vaccinations AS decimal))
+		FROM PortfolioProject..CovidVaccinations
+		WHERE continent IS NOT NULL 
+		GROUP BY location		
+	) 
+ORDER BY CAST(total_vaccinations AS decimal) desc
 
 
 -- Total Population vs Vaccinations
